@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Jersey+25&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+* {
+  font-family: "Merriweather", serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+
+}
+
+body {
+  margin: 0;
+  background: black;
+  display: flex;
+  // min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+  padding: 0px 40px 30px 40px;
+}
+
+.trending-gifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid rgb(201, 198, 198);
+    gap: 10px;
+    .logo {
+      font-size: 27px;
+      color: white;
+      font-family: "Abril Fatface", serif;
+      letter-spacing: 3px;
+    }
+  }
+
+  .title {
+    margin: 40px 20px 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+  .description {
+    color: white;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 16px;
+  
+      .gif-player {
+        height: 200px;
+      }
+    }
+    .pagination {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 30px;
+      input {
+        width: 33px;
+      }
+    }
+  }
+
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  margin-top: 20px;
+
+  .input {
+    border: 1px;
+    border-radius: 8px;
+    background: #C4E4FF;
+    border-color: #C0D6E8;
+    padding: 8px 16px;
+    width: 150px;
+    outline-color: #387ADF;
+    outline-style: solid;
+    outline-width: 1px;
+  }
+  
+  .select {
+    border: 1px;
+    border-radius: 8px;
+    background: #C4E4FF;
+    border-color: #C0D6E8;
+    padding: 8px 16px;
+    width: 150px;
+    outline-color: #387ADF;
+    outline-style: solid;
+    outline-width: 1px;
+  }
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: #387ADF;
+  border: 0px;
+  cursor: pointer;
+  color: white;
+}
+
+.input {
+  border: 1px;
+  border-radius: 8px;
+  background: #C4E4FF;
+  border-color: #C0D6E8;
+  padding: 8px 16px;
+  width: 150px;
+  outline-color: #387ADF;
+  outline-style: solid;
+  outline-width: 1px;
+}
